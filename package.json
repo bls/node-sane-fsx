@@ -1,0 +1,38 @@
+{
+  "name": "@sane/fsx",
+  "version": "0.0.1",
+  "description": "Promisified TypeScript file-system extras",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "tslint src/*.ts && tsc",
+    "test": "mocha dist/test.js"
+  },
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bls/node-sane-fsx.git"
+  },
+  "keywords": [
+    "promisify",
+    "filesystem"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "author": "Blair Strang <blair.strang@gmail.com>",
+  "homepage": "https://github.com/bls/node-sane-fsx",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "tslint": "^3.2.1",
+    "typescript": "^1.7.5"
+  },
+  "dependencies": {
+    "es6-promisify": "^3.0.0",
+    "rimraf": "^2.5.2"
+  }
+}
