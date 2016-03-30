@@ -2,10 +2,11 @@ import * as assert from 'assert';
 import * as fs from '@sane/fs';
 import * as fsx from './index';
 
-const TEST_DIR = '/tmp/rimraf';
-
 describe('fsx', function() {
     describe('rimraf', function() {
+        const TEST_DIR = '/tmp/rimraf';
+        const DOES_NOT_EXIST = '/tmp/doesnotexist_really';
+
         it('should delete things', async () => {
             let testFiles = ['/test1', '/test2', '/test3'].map(x => TEST_DIR + x);
             await fs.mkdirAsync(TEST_DIR);
@@ -21,6 +22,9 @@ describe('fsx', function() {
                 return;
             }
             assert.equal(1, 0); /* NOT REACHED */
+        });
+        it('should succeed even when dir does not exist', async () => {
+            await fsx.rimraf(DOES_NOT_EXIST);
         });
     });
 });
