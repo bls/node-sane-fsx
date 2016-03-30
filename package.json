@@ -27,6 +27,7 @@
   "homepage": "https://github.com/bls/node-sane-fsx",
   "license": "MIT",
   "devDependencies": {
+    "@sane/fs": "^1.0.2",
     "mocha": "^2.2.4",
     "tslint": "^3.2.1",
     "typescript": "^1.7.5"
