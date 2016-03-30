@@ -4,8 +4,8 @@ import * as fsx from './index';
 
 describe('fsx', function() {
     describe('rimraf', function() {
-        const TEST_DIR = '/tmp/rimraf';
-        const DOES_NOT_EXIST = '/tmp/doesnotexist_really';
+        let TEST_DIR = '/tmp/rimraf';
+        let DOES_NOT_EXIST = '/tmp/doesnotexist_really';
 
         it('should delete things', async () => {
             let testFiles = ['/test1', '/test2', '/test3'].map(x => TEST_DIR + x);
