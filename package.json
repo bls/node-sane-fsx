@@ -1,6 +1,6 @@
 {
   "name": "@sane/fsx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Promisified TypeScript file-system extras",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "es6-promisify": "^3.0.0",
+    "mkdirp": "^0.5.1",
     "rimraf": "^2.5.2"
   }
 }
