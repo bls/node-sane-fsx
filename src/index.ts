@@ -1,6 +1,6 @@
-import promisify = require('es6-promisify');
-import rimraf_ = require('rimraf');
-import mkdirp_ = require('mkdirp');
+let promisify = require('es6-promisify');
+let rimraf_ = require('rimraf');
+let mkdirp_ = require('mkdirp');
 
 export let rm_rf: (path: string) => Promise<void> = promisify(rimraf_);
 export interface MkdirpLongOptions {
